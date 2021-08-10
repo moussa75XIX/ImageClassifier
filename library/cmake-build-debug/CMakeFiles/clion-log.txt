@@ -1,0 +1,4 @@
+"D:\Oussama\ESGI\Outils\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Oussama\ESGI\Cours\PROJETS\Projet Annuel\library"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug

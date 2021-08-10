@@ -1,0 +1,3 @@
+"D:\Oussama\ESGI\Outils\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\library.dir/objects.a
+D:\Oussama\ESGI\Outils\mingw64\bin\ar.exe cr CMakeFiles\library.dir/objects.a @CMakeFiles\library.dir\objects1.rsp
+D:\Oussama\ESGI\Outils\mingw64\bin\g++.exe -g -shared -o liblibrary.dll -Wl,--out-implib,liblibrary.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\library.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\library.dir\linklibs.rsp
