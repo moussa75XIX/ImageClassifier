@@ -28,9 +28,7 @@ def get_classe(folder, file, espagne_predict, france_predict, japon_predict):
     espagne_model = MY_LIB.load_linear_model(espagne_b_path)
     france_model = MY_LIB.load_linear_model(france_b_path)
     japon_model = MY_LIB.load_linear_model(japon_b_path)
-    print(espagne_model)
-    print(france_model)
-    print(japon_model)
+
     dataset_inputs_size = len(im_arr)
     dataset_inputs_type = ctypes.c_float * dataset_inputs_size
 
@@ -58,12 +56,13 @@ def get_classe(folder, file, espagne_predict, france_predict, japon_predict):
 
     return final_prediction
 
-folder = "..\\dataset\\test\\france"
-file = "316.png"
 
-espagne_file_model = "..\\saves\\linear_model\\train_linear_model_espagne_10_08_2021_H01_M40_S09.json"
-france_file_model = "..\\saves\\linear_model\\train_linear_model_france_10_08_2021_H01_M40_S09.json"
-japon_file_model = "..\\saves\\linear_model\\train_linear_model_japon_10_08_2021_H01_M40_S09.json"
+folder = "..\\dataset\\test\\japon"
+file = "563.png"
+
+espagne_file_model = "..\\saves\\linear_model\\train_linear_model_espagne_14_08_2021_H17_M51_S58.json"
+france_file_model = "..\\saves\\linear_model\\train_linear_model_france_14_08_2021_H17_M51_S58.json"
+japon_file_model = "..\\saves\\linear_model\\train_linear_model_japon_14_08_2021_H17_M51_S58.json"
 
 prediction = get_classe(folder, file, espagne_file_model, france_file_model, japon_file_model)
 print(prediction)

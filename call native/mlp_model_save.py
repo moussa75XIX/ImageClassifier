@@ -136,12 +136,13 @@ def run():
 
     native_dataset_inputs = dataset_inputs_type(*dataset_inputs)
     native_dataset_outputs = dataset_outputs_type(*dataset_outputs)
-
+    
     MY_LIB.train_classification_stochastic_backprop_mlp_model(model, native_dataset_inputs, dataset_inputs_size,
                                                               native_dataset_outputs, dataset_outputs_size, 0.001,
                                                               100000)
 
     predicted_values = []
+
 
     for p in x_train:
 

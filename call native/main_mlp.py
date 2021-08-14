@@ -10,7 +10,7 @@ CLASSES = ["espagne", "france", "japon"]
 CLASSES_SIZE = len(CLASSES)
 
 folder = "..\\dataset\\test\\france"
-file = "268.png"
+file = "341.png"
 
 full_path = folder + "\\" + file
 
@@ -27,7 +27,7 @@ im_arr = im_arr.tolist()
 MY_LIB.load_mlp_model.argtypes = [ctypes.c_char_p]
 MY_LIB.load_mlp_model.restype = ctypes.c_void_p
 
-file_model = "..\\saves\\mlp_model\\train_mlp_model_10_08_2021_H19_M01_S27.json"
+file_model = "..\\saves\\mlp_model\\train_mlp_model_14_08_2021_H17_M57_S29.json"
 b_path = file_model.encode('utf-8')
 
 model = MY_LIB.load_mlp_model(b_path)
