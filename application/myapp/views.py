@@ -101,7 +101,7 @@ def analyze(request):
 
         file = ""
 
-        for files in glob.iglob('media\\documents\\**\\*.png', recursive=True):
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
             file = files
 
         print("\n FILE : ", file, "\n")
