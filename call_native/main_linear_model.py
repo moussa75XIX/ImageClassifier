@@ -60,9 +60,10 @@ def get_classe(folder, file, espagne_predict, france_predict, japon_predict):
 folder = "..\\dataset\\test\\japon"
 file = "563.png"
 
-espagne_file_model = "..\\saves\\linear_model\\train_linear_model_espagne_14_08_2021_H17_M51_S58.json"
-france_file_model = "..\\saves\\linear_model\\train_linear_model_france_14_08_2021_H17_M51_S58.json"
-japon_file_model = "..\\saves\\linear_model\\train_linear_model_japon_14_08_2021_H17_M51_S58.json"
+espagne_file_model = "..\\saves\\linear_model\\train_linear_model_espagne_14_08_2021_H19_M21_S58.json"
+france_file_model = "..\\saves\\linear_model\\train_linear_model_france_14_08_2021_H19_M21_S58.json"
+japon_file_model = "..\\saves\\linear_model\\train_linear_model_japon_14_08_2021_H19_M21_S58.json"
 
 prediction = get_classe(folder, file, espagne_file_model, france_file_model, japon_file_model)
 print(prediction)
+

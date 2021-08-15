@@ -60,3 +60,5 @@ if tab_predict[1] < 0.7 and tab_predict[2] < 0.7:
     final_prediction.append(CLASSES[0])
 
 print(final_prediction)
+
+
