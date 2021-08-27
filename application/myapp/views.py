@@ -11,9 +11,9 @@ sys.path.insert(0, str(Path(Path(__file__).parent.absolute()).parent.absolute().
 
 from scripts_notebooks import predict_keras_mlp_model
 
-PATH_TO_SHARED_LIBRARY = "../library/cmake-build-debug/liblibrary.dll"
+#PATH_TO_SHARED_LIBRARY = "../library/cmake-build-debug/liblibrary.dll"
 
-MY_LIB = ctypes.CDLL(PATH_TO_SHARED_LIBRARY)
+#MY_LIB = ctypes.CDLL(PATH_TO_SHARED_LIBRARY)
 
 model = tf.keras.models.load_model("../models/keras_models/model_d.h5")
 
