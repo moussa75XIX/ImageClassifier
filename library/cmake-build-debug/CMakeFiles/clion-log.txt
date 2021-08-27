@@ -1,4 +1,4 @@
-"D:\Oussama\ESGI\Outils\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Oussama\ESGI\Cours\PROJETS\Projet Annuel\library"
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\mouss\OneDrive\Documents\ProjetAnnuel\library
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug
+-- Build files have been written to: C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug

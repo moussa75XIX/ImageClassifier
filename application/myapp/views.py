@@ -2,23 +2,23 @@ import glob
 from django.shortcuts import redirect, render
 from .models import Document
 from .forms import DocumentForm
-import ctypes
 import shutil
 import sys
 from pathlib import Path
+import tensorflow as tf
+import ctypes
 sys.path.insert(0, str(Path(Path(__file__).parent.absolute()).parent.absolute().parent.absolute()))
-from call_native import main_linear_model
 
+from scripts_notebooks import predict_keras_mlp_model
 
 PATH_TO_SHARED_LIBRARY = "../library/cmake-build-debug/liblibrary.dll"
 
 MY_LIB = ctypes.CDLL(PATH_TO_SHARED_LIBRARY)
 
-CLASSES = ["espagne", "france", "japon"]
+model = tf.keras.models.load_model("../models/keras_models/model_d.h5")
 
-espagne_file_model = "..\\saves\\linear_model\\train_linear_model_espagne_14_08_2021_H19_M21_S58.json"
-france_file_model = "..\\saves\\linear_model\\train_linear_model_france_14_08_2021_H19_M21_S58.json"
-japon_file_model = "..\\saves\\linear_model\\train_linear_model_japon_14_08_2021_H19_M21_S58.json"
+CLASSES = ["espagne", "france", "japon"]
+CLASSES_SIZE = len(CLASSES)
 
 
 def img_not_found(request):
@@ -53,11 +53,10 @@ def analyze(request):
 
         folder = file.rsplit('\\', 1)[0]
         image_file = file.rsplit('\\', 1)[1]
-        image_class = main_linear_model.get_classe(folder, image_file, espagne_file_model, france_file_model,
-                                                   japon_file_model)
+        image_class = predict_keras_mlp_model.predict(model,CLASSES,CLASSES_SIZE,file)
         try:
             context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
-                       'result': result, 'predict': image_class[0]}
+                       'result': result, 'predict': image_class}
             try:
                 shutil.rmtree("media\\documents")
             except:

@@ -1,11 +1,15 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/LINEAR.cpp" "D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/CMakeFiles/library.dir/LINEAR.cpp.obj"
-  "D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/MLP.cpp" "D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/CMakeFiles/library.dir/MLP.cpp.obj"
+  "C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/LINEAR.cpp" "C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/CMakeFiles/library.dir/LINEAR.cpp.obj"
+  "C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/MLP.cpp" "C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/CMakeFiles/library.dir/MLP.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +20,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../../extern libraries/json"
+  "../../extern_libraries/json"
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
 # Targets to which this target links.

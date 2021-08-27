@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/extern libraries/NumCpp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extern_libraries/NumCpp" vcs="Git" />
   </component>
 </project>
