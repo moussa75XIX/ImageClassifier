@@ -292,17 +292,17 @@ DLLEXPORT float* predict_mlp_model_regression(MLP* model, float* sample_inputs, 
 
 }
 
-DLLEXPORT void save_mlp_model(MLP *model, const char* tab_path,const char* model_name) {
+DLLEXPORT void save_mlp_model(MLP *model, const char* tab_path) {
 
     std::string deb_path(tab_path);
 
-    std::string beg = "model_";
+    std::string beg = "train_mlp_model_";
 
     time_t now = time(0);
     struct tm tstruct;
     char buf[80];
     tstruct = *localtime(&now);
-    strftime(buf, sizeof(buf), model_name, &tstruct);
+    strftime(buf, sizeof(buf), "%d_%m_%Y_H%H_M%M_S%S", &tstruct);
 
     std::string filename = beg + buf;
     std::string path = deb_path + "\\" + filename + ".json";

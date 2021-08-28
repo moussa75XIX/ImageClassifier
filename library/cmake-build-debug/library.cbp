@@ -8,93 +8,93 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug"/>
+				<Option working_dir="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug"/>
+				<Option working_dir="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="library">
-				<Option output="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/liblibrary.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug"/>
+				<Option output="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/liblibrary.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/../extern_libraries/json"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/../extern libraries/json"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 library"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 library"/>
+					<CompileFile command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="library/fast">
-				<Option output="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/liblibrary.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug"/>
+				<Option output="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/liblibrary.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/../extern_libraries/json"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/../extern libraries/json"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Oussama/ESGI/Outils/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 library/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 library/fast"/>
+					<CompileFile command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug"/>
+				<Option working_dir="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Oussama/ESGI/Outils/mingw64/bin/mingw32-make.exe -f &quot;D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/LINEAR.cpp">
+		<Unit filename="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/LINEAR.cpp">
 			<Option target="library"/>
 		</Unit>
-		<Unit filename="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/LINEAR.h">
+		<Unit filename="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/LINEAR.h">
 			<Option target="library"/>
 		</Unit>
-		<Unit filename="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/MLP.cpp">
+		<Unit filename="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/MLP.cpp">
 			<Option target="library"/>
 		</Unit>
-		<Unit filename="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/MLP.h">
+		<Unit filename="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/MLP.h">
 			<Option target="library"/>
 		</Unit>
-		<Unit filename="C:/Users/mouss/OneDrive/Documents/ProjetAnnuel/library/CMakeLists.txt">
+		<Unit filename="D:/Oussama/ESGI/Cours/PROJETS/Projet Annuel/library/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

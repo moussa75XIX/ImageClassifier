@@ -11,12 +11,14 @@ sys.path.insert(0, str(Path(Path(__file__).parent.absolute()).parent.absolute().
 
 from scripts_notebooks import predict_keras_mlp_model
 
-#PATH_TO_SHARED_LIBRARY = "../library/cmake-build-debug/liblibrary.dll"
+PATH_TO_SHARED_LIBRARY = "../library/cmake-build-debug/liblibrary.dll"
 
-#MY_LIB = ctypes.CDLL(PATH_TO_SHARED_LIBRARY)
+MY_LIB = ctypes.CDLL(PATH_TO_SHARED_LIBRARY)
 
-model = tf.keras.models.load_model("../models/keras_models/model_d.h5")
-
+keras_model_a = tf.keras.models.load_model("../models/keras_models/model_a.h5")
+keras_model_b = tf.keras.models.load_model("../models/keras_models/model_b.h5")
+keras_model_c = tf.keras.models.load_model("../models/keras_models/model_c.h5")
+keras_model_d = tf.keras.models.load_model("../models/keras_models/model_d.h5")
 CLASSES = ["espagne", "france", "japon"]
 CLASSES_SIZE = len(CLASSES)
 
@@ -35,7 +37,7 @@ def error(request):
     return render(request, 'error.html')
 
 
-def analyze(request):
+def analyze_with_keras_model_a(request):
     try:
         # Load documents for the list page
         documents = Document.objects.all()
@@ -50,10 +52,102 @@ def analyze(request):
 
         print("\n FILE : ", file, "\n")
 
+        image_class = predict_keras_mlp_model.predict(keras_model_a,CLASSES,CLASSES_SIZE,file)
+        try:
+            context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
+                       'result': result, 'predict': image_class}
+            try:
+                shutil.rmtree("media\\documents")
+            except:
+                pass
 
-        folder = file.rsplit('\\', 1)[0]
-        image_file = file.rsplit('\\', 1)[1]
-        image_class = predict_keras_mlp_model.predict(model,CLASSES,CLASSES_SIZE,file)
+            return render(request, 'result.html', context)
+
+        except:
+            return redirect('error')
+    except:
+        return redirect('img_not_found')
+
+
+def analyze_with_keras_model_b(request):
+    try:
+        # Load documents for the list page
+        documents = Document.objects.all()
+        document = documents.last
+
+        # Render list page with the documents and the form
+        result = "Résultat de l'analyse"
+        file = ""
+
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
+            file = files
+
+        print("\n FILE : ", file, "\n")
+
+        image_class = predict_keras_mlp_model.predict(keras_model_b,CLASSES,CLASSES_SIZE,file)
+        try:
+            context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
+                       'result': result, 'predict': image_class}
+            try:
+                shutil.rmtree("media\\documents")
+            except:
+                pass
+
+            return render(request, 'result.html', context)
+
+        except:
+            return redirect('error')
+    except:
+        return redirect('img_not_found')
+
+
+def analyze_with_keras_model_c(request):
+    try:
+        # Load documents for the list page
+        documents = Document.objects.all()
+        document = documents.last
+
+        # Render list page with the documents and the form
+        result = "Résultat de l'analyse"
+        file = ""
+
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
+            file = files
+
+        print("\n FILE : ", file, "\n")
+
+        image_class = predict_keras_mlp_model.predict(keras_model_c,CLASSES,CLASSES_SIZE,file)
+        try:
+            context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
+                       'result': result, 'predict': image_class}
+            try:
+                shutil.rmtree("media\\documents")
+            except:
+                pass
+
+            return render(request, 'result.html', context)
+
+        except:
+            return redirect('error')
+    except:
+        return redirect('img_not_found')
+
+def analyze_with_keras_model_d(request):
+    try:
+        # Load documents for the list page
+        documents = Document.objects.all()
+        document = documents.last
+
+        # Render list page with the documents and the form
+        result = "Résultat de l'analyse"
+        file = ""
+
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
+            file = files
+
+        print("\n FILE : ", file, "\n")
+
+        image_class = predict_keras_mlp_model.predict(keras_model_d,CLASSES,CLASSES_SIZE,file)
         try:
             context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
                        'result': result, 'predict': image_class}

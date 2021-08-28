@@ -39,11 +39,35 @@
 *            <img src="{{ document.docfile.url }}">
             <br>
             <br>
-             <a class="btn btn-success" href="{% url 'analyze' %}" style="
-            color: white;padding: 16px 32px;">Analyser</a>
+
+            <h3>
+                Analyser avec les modèles Keras :
+            </h3>
+             <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+            color: white;padding: 8px 16px;">MLP sans couche cachées</a>
+             <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+            color: white;padding: 8px 16px;">MLP avec 1 couche de 8 neurones</a>
+             <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+            color: white;padding: 8px 16px;">MLP avec 1 couche de 32 neurones</a>
+             <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+            color: white;padding: 8px 16px;">MLP avec 2 couche de 32 neurones</a>
         </form>
 
+         <br> <br> <br> <br>
 
+         <h3>
+            Analyser avec les modèles de la librairie C++ :
+        </h3>
+         <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+        color: white;padding: 8px 16px;">MLP sans couche cachées</a>
+         <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+        color: white;padding: 8px 16px;">MLP avec 1 couche de 8 neurones</a>
+         <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+        color: white;padding: 8px 16px">MLP avec 1 couche de 32 neurones</a>
+         <a class="btn btn-success" href="{% url 'analyze_with_keras_model_a' %}" style="
+        color: white;padding: 8px 16px">MLP avec 2 couche de 32 neurones</a>
+
+    </form>
 
     </div>
     </body>
