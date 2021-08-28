@@ -1,4 +1,3 @@
-import os
 import ctypes
 import numpy as np
 from PIL import Image
@@ -8,7 +7,7 @@ MY_LIB = ctypes.CDLL(PATH_TO_SHARED_LIBRARY)
 
 CLASSES = ["espagne", "france", "japon"]
 CLASSES_SIZE = len(CLASSES)
-img_path = r"..\dataset\test\france\267.png"
+img_path = r"..\dataset\test\france\283.png"
 
 MY_LIB.load_mlp_model.argtypes = [ctypes.c_char_p]
 MY_LIB.load_mlp_model.restype = ctypes.c_void_p
@@ -46,23 +45,29 @@ def predict(model,CLASSES,CLASSES_SIZE,img_path):
     for q in range(3):
         tab_predict.append(predict[q])
 
-    print(tab_predict)
-
-    final_prediction = []
+    max_tab = max(tab_predict)
+    prediction_percent = 0
 
     for i in range(CLASSES_SIZE):
+        if tab_predict[i] == max_tab:
+            prediction_percent = (tab_predict[i])
 
-        if tab_predict[i] > 0.7:
-            final_prediction.append(CLASSES[i])
+    if prediction_percent == tab_predict[0]:
+        prediction_class = CLASSES[0]
+    elif prediction_percent == tab_predict[1]:
+        prediction_class = CLASSES[1]
+    else:
+        prediction_class = CLASSES[2]
 
-    if tab_predict[1] < 0.7 and tab_predict[2] < 0.7:
-        final_prediction.append(CLASSES[0])
+    print(tab_predict)
+    print(prediction_class)
 
-    print(final_prediction)
+    return prediction_class
 
-    return final_prediction[0]
+
+def main():
+    predict(model, CLASSES, CLASSES_SIZE, img_path)
 
 
 if __name__ == "__main__":
-    predict(model,CLASSES,CLASSES_SIZE,img_path)
-
+    main()

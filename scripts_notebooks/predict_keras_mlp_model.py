@@ -8,7 +8,7 @@ model = tf.keras.models.load_model("../models/keras_models/model_a.h5")
 CLASSES = ["espagne", "france", "japon"]
 CLASSES_SIZE = len(CLASSES)
 
-img_path = r"..\dataset\test\france\267.png"
+img_path = r"..\dataset\test\france\353.png"
 
 
 def predict(model,CLASSES,CLASSES_SIZE,img_path):
@@ -42,21 +42,29 @@ def predict(model,CLASSES,CLASSES_SIZE,img_path):
     for q in range(3):
         tab_predict.append(flat_list[q])
 
-    final_prediction = []
+    max_tab = max(tab_predict)
+    prediction_percent = 0
 
     for i in range(CLASSES_SIZE):
+        if tab_predict[i] == max_tab:
+            prediction_percent = (tab_predict[i])
 
-        if tab_predict[i] > 0.7:
-            final_prediction.append(CLASSES[i])
+    if prediction_percent == tab_predict[0]:
+        prediction_class = CLASSES[0]
+    elif prediction_percent == tab_predict[1]:
+        prediction_class = CLASSES[1]
+    else:
+        prediction_class = CLASSES[2]
 
-    if tab_predict[1] < 0.7 and tab_predict[2] < 0.7:
-        final_prediction.append(CLASSES[0])
+    print(tab_predict)
+    print(prediction_class)
 
-    print(final_prediction[0])
+    return prediction_class
 
-    return final_prediction[0]
+
+def main():
+    predict(model, CLASSES, CLASSES_SIZE, img_path)
 
 
 if __name__ == "__main__":
-    predict(model,CLASSES,CLASSES_SIZE,img_path)
-
+    main()

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="https://image.flaticon.com/icons/png/128/3163/3163998.png">
+        <title>Résultat de l'analyse</title>
+    </head>
+
+
+
+    <body style="font-family:Copperplate, Copperplate Gothic Light, fantasy;background-image: url(https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);text-align: center;">
+
+
+         <div class="content">
+             <br>
+
+ <h4>Résultat de l'analyse sur l'image : {{ file_name }}"</h4>
+                <br>
+
+        <form action="{% url 'my-view' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ message }}
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+
+            <p>
+                {{ form.docfile.errors }}
+                {{ form.docfile }}
+            </p>
+                 <h1>Classification du drapeau : {{predict}} </h1>
+
+             <br>
+             <a class="btn btn-success" href="{% url 'my-view' %}" style="
+            color: white;padding: 8px 16px;">Retour</a>
+                <br><br>
+        </form>
+    </div>
+    </body>
+</html>
