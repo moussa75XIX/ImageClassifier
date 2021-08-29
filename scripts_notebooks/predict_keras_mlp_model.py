@@ -4,11 +4,11 @@ import ctypes
 from PIL import Image
 
 
-model = tf.keras.models.load_model("../models/keras_models/model_a.h5")
+model = tf.keras.models.load_model("../models/keras_models/model_d.h5")
 CLASSES = ["espagne", "france", "japon"]
 CLASSES_SIZE = len(CLASSES)
 
-img_path = r"..\dataset\test\france\353.png"
+img_path = r"..\dataset\test\france\267.png"
 
 
 def predict(model,CLASSES,CLASSES_SIZE,img_path):
