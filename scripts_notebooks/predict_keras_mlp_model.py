@@ -2,13 +2,13 @@ import tensorflow as tf
 import numpy as np
 import ctypes
 from PIL import Image
-
-
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 model = tf.keras.models.load_model("../models/keras_models/model_d.h5")
 CLASSES = ["espagne", "france", "japon"]
 CLASSES_SIZE = len(CLASSES)
 
-img_path = r"..\dataset\test\france\267.png"
+img_path = r"..\dataset\test\japon\test.png"
 
 
 def predict(model,CLASSES,CLASSES_SIZE,img_path):

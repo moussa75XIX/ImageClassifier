@@ -56,8 +56,6 @@ def analyze_with_keras_model_a(request):
         for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
             file = files
 
-        print("\n FILE : ", file, "\n")
-
         image_class = predict_keras_mlp_model.predict(keras_model_a,CLASSES,CLASSES_SIZE,file)
         try:
             context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
