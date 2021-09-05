@@ -1,6 +1,7 @@
 # ProjetAnnuel
 
 
+
 # Problematique
 
 L'objectif du projet est de pouvoir déterminer à quel pays appartient une image représentant son drapeau national.
@@ -62,7 +63,11 @@ Dossier dans lequel sont enregistrés les modèles entrainés en C++ et en Keras
 | predict_cpplibrary_mlp_model| Script | Permet d'effectuer des prédictions sur les différents modèles PMC crées avec la librairie codée en C++ |
 
 
+## others : 
 
+Dossier contenant :
+-> Le rapport final représentant les résultats des modèles (prédictions et analyses des courbes obtenues avec Tensorboard)
+-> Script permettant d'évaluer les stats du dataset avec Tensorflow Keras
 
 
 
