@@ -33,7 +33,7 @@ Jeu de données d'entrainement et de test sur 3 types de drapeaux nationaux (Esp
 Ex : Dossier contenant les données d'entrainements pour la classe France
 
 
-![alt text](https://i.ibb.co/NthcR6B/dataset-screen.png)
+![alt text](https://i.postimg.cc/Pxd1rTc5/dataset-screen.png)
 
 
 ## library :
