@@ -1,4 +1,4 @@
-# ProjetAnnuel
+# Projet Annuel
 
 
 
@@ -20,6 +20,7 @@ Pour lancer l'application il faut lancer la commande.
 python manage.py runserver
 ```
 
+
 ![alt text](https://i.ibb.co/CBgdX19/appli-screen.png)
 
 
@@ -28,6 +29,7 @@ python manage.py runserver
 Jeu de données d'entrainement et de test sur 3 types de drapeaux nationaux (Espagne, France et Japon)
 
 Ex : Dossier contenant les données d'entrainements pour la classe France
+
 
 ![alt text](https://i.ibb.co/NthcR6B/dataset-screen.png)
 
@@ -50,6 +52,13 @@ Dossier dans lequel sont enregistrés les modèles entrainés en C++ et en Keras
 
 
 ## scripts_notebooks :
+
+Dossier contenant des scripts et notebooks Python permettant de créer, entrainer des modèles et d'effectuer des prédictions.
+
+Ex : predict_keras_mlp_model.py 
+
+![alt text](https://i.ibb.co/qpCv6TT/coding-screen.png)
+
 
 ### Partie Keras :
 
@@ -74,6 +83,7 @@ Dossier dans lequel sont enregistrés les modèles entrainés en C++ et en Keras
 Dossier contenant :
 
 -> Le rapport final représentant les résultats des modèles (prédictions et analyses des courbes obtenues avec Tensorboard)
+
 
 ![alt text](https://i.ibb.co/gJZRCtZ/rapport-screen.png)
 
