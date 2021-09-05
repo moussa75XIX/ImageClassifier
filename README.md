@@ -23,7 +23,7 @@ python manage.py runserver
 Interface de l'application web :
 
 
-![alt text](https://i.ibb.co/CBgdX19/appli-screen.png)
+![alt text](https://i.postimg.cc/x8x3wTKB/appli-screen.png)
 
 
 ## dataset :
