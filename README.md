@@ -1,7 +1,15 @@
 # ProjetAnnuel
 
+# Problematique
+
+Ce rapport a pour but de démontrer les résultats que j'ai pu obtenir après 1 mois de travail. L'objectif du projet etait de pouvoir déterminer à quel pays appartient une image représentant son drapeau national.
+Pour ce faire nous devions créer et entrainer plusieurs PMC avec une configuration précise jusqu'a convergence. Une fois les modèles entrainées et pret à predire nous devions developper une application web permettant à un utilisateur d'importer une image et de réaliser des prédictions dessus.
+La lecture de ce rapport permettra de voir les résultats que j'ai obtenu en developpant des modèles PMC avec la librairie Keras de Tensorflow ainsi que les résultats que j'ai obtenu en essayant de résoudre la problématique de base en utilisant une librairie C++ 
+contenant les méthodes nécessaires à la création, la sauvegarde, l'entrainement et la suppression d'un PMC.
 
 
+
+# Présentation des dossiers
 
 ## application :
 
