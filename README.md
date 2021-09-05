@@ -42,6 +42,10 @@ Librairie dynamique developée en C++ permettant de créer, entrainer, sauvegard
 La librairie est utilisée en Python à l'aide du module ctypes. Elle est d’une part utilisée sur PyCharm et sur Jupyter Notebook afin de tester les fonctions relatives aux algorithmes d’apprentissage
 implémentant les modèles. 
 
+Fichier MLP.cpp de la librairie contenant les méthodes pour faire un PMC :
+
+![alt text](https://i.postimg.cc/bvRsBSTN/cpplib-screen.png)
+
 
 ## extern_librairies :
 
@@ -91,8 +95,6 @@ Dossier contenant :
 
 
 -> Script permettant d'évaluer les stats du dataset avec Tensorflow Keras
-
-
 
 
 
