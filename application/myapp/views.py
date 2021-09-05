@@ -22,7 +22,11 @@ keras_model_d = tf.keras.models.load_model("../models/keras_models/model_d.h5")
 
 MY_LIB.load_mlp_model.argtypes = [ctypes.c_char_p]
 MY_LIB.load_mlp_model.restype = ctypes.c_void_p
+
 cpplibrary_model_a = MY_LIB.load_mlp_model("..\\models\\cpplibrary_models\\model_a.json".encode('utf-8'))
+cpplibrary_model_b = MY_LIB.load_mlp_model("..\\models\\cpplibrary_models\\model_b.json".encode('utf-8'))
+cpplibrary_model_c = MY_LIB.load_mlp_model("..\\models\\cpplibrary_models\\model_c.json".encode('utf-8'))
+cpplibrary_model_d = MY_LIB.load_mlp_model("..\\models\\cpplibrary_models\\model_d.json".encode('utf-8'))
 
 
 CLASSES = ["espagne", "france", "japon"]
@@ -185,6 +189,101 @@ def analyze_with_cpplibrary_model_a(request):
         print("\n FILE : ", file, "\n")
 
         image_class = predict_cpplibrary_mlp_model.predict(cpplibrary_model_a,CLASSES,CLASSES_SIZE,file)
+        try:
+            context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
+                       'result': result, 'predict': image_class}
+            try:
+                shutil.rmtree("media\\documents")
+            except:
+                pass
+
+            return render(request, 'cpplibrary_model_a_result.html', context)
+
+        except:
+            return redirect('error')
+    except:
+        return redirect('img_not_found')
+
+
+def analyze_with_cpplibrary_model_b(request):
+    try:
+        # Load documents for the list page
+        documents = Document.objects.all()
+        document = documents.last
+
+        # Render list page with the documents and the form
+        result = "Résultat de l'analyse"
+        file = ""
+
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
+            file = files
+
+        print("\n FILE : ", file, "\n")
+
+        image_class = predict_cpplibrary_mlp_model.predict(cpplibrary_model_b,CLASSES,CLASSES_SIZE,file)
+        try:
+            context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
+                       'result': result, 'predict': image_class}
+            try:
+                shutil.rmtree("media\\documents")
+            except:
+                pass
+
+            return render(request, 'cpplibrary_model_a_result.html', context)
+
+        except:
+            return redirect('error')
+    except:
+        return redirect('img_not_found')
+
+
+def analyze_with_cpplibrary_model_c(request):
+    try:
+        # Load documents for the list page
+        documents = Document.objects.all()
+        document = documents.last
+
+        # Render list page with the documents and the form
+        result = "Résultat de l'analyse"
+        file = ""
+
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
+            file = files
+
+        print("\n FILE : ", file, "\n")
+
+        image_class = predict_cpplibrary_mlp_model.predict(cpplibrary_model_c,CLASSES,CLASSES_SIZE,file)
+        try:
+            context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
+                       'result': result, 'predict': image_class}
+            try:
+                shutil.rmtree("media\\documents")
+            except:
+                pass
+
+            return render(request, 'cpplibrary_model_a_result.html', context)
+
+        except:
+            return redirect('error')
+    except:
+        return redirect('img_not_found')
+
+def analyze_with_cpplibrary_model_d(request):
+    try:
+        # Load documents for the list page
+        documents = Document.objects.all()
+        document = documents.last
+
+        # Render list page with the documents and the form
+        result = "Résultat de l'analyse"
+        file = ""
+
+        for files in glob.iglob('media\\documents\\**\\*.*', recursive=True):
+            file = files
+
+        print("\n FILE : ", file, "\n")
+
+        image_class = predict_cpplibrary_mlp_model.predict(cpplibrary_model_d,CLASSES,CLASSES_SIZE,file)
         try:
             context = {'documents': documents, "file_name": file.split('\\')[-1], 'document': document,
                        'result': result, 'predict': image_class}
