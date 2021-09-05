@@ -20,6 +20,8 @@ Pour lancer l'application il faut lancer la commande.
 python manage.py runserver
 ```
 
+![alt text](https://i.ibb.co/sJ148zC/appli-screen.png)
+
 
 ## dataset :
 
