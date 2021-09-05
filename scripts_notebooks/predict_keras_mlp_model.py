@@ -1,6 +1,5 @@
 import tensorflow as tf
 import numpy as np
-import ctypes
 from PIL import Image
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -20,9 +19,6 @@ def predict(model,CLASSES,CLASSES_SIZE,img_path):
     im_arr = np.array(image).flatten()
     im_arr = im_arr / 255.0
     im_arr = im_arr.tolist()
-
-    dataset_inputs_size = len(im_arr)
-    dataset_inputs_type = ctypes.c_float * dataset_inputs_size
 
     im_arr = np.array(im_arr)
 
