@@ -20,6 +20,8 @@ Pour lancer l'application il faut lancer la commande.
 python manage.py runserver
 ```
 
+Interface de l'application web :
+
 
 ![alt text](https://i.ibb.co/CBgdX19/appli-screen.png)
 
