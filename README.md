@@ -1,5 +1,6 @@
 # ProjetAnnuel
 
+<<<<<<< HEAD
 # Problematique
 
 Ce rapport a pour but de démontrer les résultats que j'ai pu obtenir après 1 mois de travail. L'objectif du projet etait de pouvoir déterminer à quel pays appartient une image représentant son drapeau national.
@@ -10,6 +11,29 @@ contenant les méthodes nécessaires à la création, la sauvegarde, l'entrainem
 
 
 # Présentation des dossiers
+=======
+
+## scripts_notebooks :
+
+
+### Partie Keras :
+
+| Nom | Type | Description |
+| ------|-----|-----|
+| create_keras_mlp_models | Notebook| Permet de créer les différents modèles PMC avec la librairie Tensorflow Keras |
+| train_keras_mlp_models | Notebook | Permet d'entrainer les différents modèles PMC crées avec la librairie Tensorflow Keras |
+| predict_keras_mlp_model | Script | Permet d'effectuer des prédictions sur les différents modèles PMC crées avec la librairie Tensorflow Keras |
+
+
+### Partie C++ :
+
+| Nom | Type | Description |
+| ------|-----|-----|
+| create_cpplibrary_mlp_models| Notebook| Permet de créer les différents modèles PMC avec la librairie codée en C++ |
+| train_cpplibrary_mlp_models| Notebook | Permet d'entrainer les différents modèles PMC crées avec la librairie codée en C++ |
+| predict_cpplibrary_mlp_model| Script | Permet d'effectuer des prédictions sur les différents modèles PMC crées avec la librairie codée en C++ |
+
+>>>>>>> 4c4d955137ca0ec579b071a68a22ae0b5927e478
 
 ## application :
 
@@ -20,12 +44,15 @@ Pour lancer l'application il faut lancer la commande.
 python manage.py runserver
 ```
 
+<<<<<<< HEAD
 
 ## dataset :
 
 Jeu de données d'entrainement et de test sur 3 types de drapeaux nationaux (Espagne, France et Japon)
 
 
+=======
+>>>>>>> 4c4d955137ca0ec579b071a68a22ae0b5927e478
 ## library :
 
 Librairie dynamique developée en C++ permettant de créer, entrainer, sauvegarder et détruire des modèles linéaires et des PMC.
@@ -33,9 +60,16 @@ La librairie est utilisée en Python à l'aide du module ctypes. Elle est d’un
 implémentant les modèles. 
 
 
+<<<<<<< HEAD
 ## extern_librairies :
 
 Librairies externes nécessaires au développement de la librairie principale . Ex: librairie JSON qui va faciliter l’enregistrement des modèles dans des fichiers JSON (ainsi que leur chargement).
+=======
+
+## extern_librairies :
+
+Librairies externes nécessaires au développement de la librairie principale. Ex: librairie JSON qui va faciliter l’enregistrement des modèles dans des fichiers JSON (ainsi que leur chargement).
+>>>>>>> 4c4d955137ca0ec579b071a68a22ae0b5927e478
 
 
 ## models : 
@@ -43,6 +77,7 @@ Librairies externes nécessaires au développement de la librairie principale . 
 Dossier dans lequel sont enregistrés les modèles entrainés en C++ et en Keras.
 
 
+<<<<<<< HEAD
 ## scripts_notebooks :
 
 ### Partie Keras :
@@ -69,6 +104,8 @@ Dossier dans lequel sont enregistrés les modèles entrainés en C++ et en Keras
 
 
 
+=======
+>>>>>>> 4c4d955137ca0ec579b071a68a22ae0b5927e478
 
 
 
