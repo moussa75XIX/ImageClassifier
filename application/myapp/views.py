@@ -229,7 +229,7 @@ def analyze_with_cpplibrary_model_b(request):
             except:
                 pass
 
-            return render(request, 'cpplibrary_model_a_result.html', context)
+            return render(request, 'cpplibrary_model_b_result.html', context)
 
         except:
             return redirect('error')
@@ -261,7 +261,7 @@ def analyze_with_cpplibrary_model_c(request):
             except:
                 pass
 
-            return render(request, 'cpplibrary_model_a_result.html', context)
+            return render(request, 'cpplibrary_model_c_result.html', context)
 
         except:
             return redirect('error')
@@ -292,7 +292,7 @@ def analyze_with_cpplibrary_model_d(request):
             except:
                 pass
 
-            return render(request, 'cpplibrary_model_a_result.html', context)
+            return render(request, 'cpplibrary_model_d_result.html', context)
 
         except:
             return redirect('error')

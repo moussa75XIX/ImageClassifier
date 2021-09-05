@@ -9,6 +9,9 @@ urlpatterns = [
     path('keras_model_d_result', analyze_with_keras_model_d, name='analyze_with_keras_model_d'),
 
     path('cpplibrary_model_a_result', analyze_with_cpplibrary_model_a, name='analyze_with_cpplibrary_model_a'),
+    path('cpplibrary_model_b_result', analyze_with_cpplibrary_model_b, name='analyze_with_cpplibrary_model_b'),
+    path('cpplibrary_model_c_result', analyze_with_cpplibrary_model_c, name='analyze_with_cpplibrary_model_c'),
+    path('cpplibrary_model_d_result', analyze_with_cpplibrary_model_d, name='analyze_with_cpplibrary_model_d'),
     path('img_not_found', img_not_found, name='img_not_found'),
     path('error', error, name='error')
 ]
