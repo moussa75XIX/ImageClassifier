@@ -13,7 +13,7 @@ De plus, nous devions developper une application web permettant à un utilisateu
 
 ## application :
 
-Application réalisée en django permettant à un utilisateur de faire des prédictions sur des images qu'il aura uploadé.
+Application réalisée en Django permettant à un utilisateur de faire des prédictions sur des images qu'il aura uploadé.
 Pour lancer l'application il faut lancer la commande.
 
 ```bash
